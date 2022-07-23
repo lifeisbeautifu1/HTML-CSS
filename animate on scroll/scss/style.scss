@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: bordor-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #f9f9f9;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+
+  background-color: #f1f1f1;
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    img {
+      height: 400px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.main-header {
+  height: 50vh;
+  text-align: center;
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 4rem;
+    span {
+      color: #b50d10;
+    }
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  color: #fff;
+  background: #44d;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: block;
+  }
+}

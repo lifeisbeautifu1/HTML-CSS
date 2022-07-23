@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.showcase::after {
+  content: "";
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-image: url("img/pexels-negative-space-169573.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  transition: all 1s;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: -150px;
+  transition: all 1s;
+}
+
+.content .logo {
+  height: 180px;
+  width: 180px;
+}
+
+.content .title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.content .text {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.footer {
+  padding: 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Small screens */
+
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .showcase .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 0.5rem;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .services div {
+    border-bottom: 1px dashed #333;
+    padding: 1rem;
+  }
+}
+
+@media (max-height: 500px) {
+  .content .text,
+  .content .title {
+    display: none;
+  }
+  .content {
+    top: 5%;
+  }
+}

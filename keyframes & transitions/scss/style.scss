@@ -1,0 +1,45 @@
+body {
+  background: #333;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+
+  transition: all 2s ease-in;
+
+  animation: race 4s infinite;
+
+  &:hover {
+    background: rgb(68, 221, 78);
+    border-radius: 50%;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes race {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    background: red;
+    transform: translate(500px, 0);
+    border-top-right-radius: 50%;
+  }
+  50% {
+    background: #44d;
+    transform: translate(500px, 500px);
+    border-bottom-right-radius: 50%;
+  }
+  75% {
+    background: rgb(68, 221, 78);
+    transform: translate(0, 500px);
+    border-bottom-left-radius: 50%;
+  }
+  100% {
+    border-top-left-radius: 50%;
+    transform: translate(0, 0);
+  }
+}

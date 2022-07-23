@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.current {
+  color: #44d;
+}
+
+.btn {
+  color: #fff;
+  background: #44d;
+
+  display: inline-block;
+  cursor: pointer;
+
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+  .testemonials {
+    height: 80vh;
+    position: relative;
+
+    h2 {
+      letter-spacing: 5px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 10rem;
+      span {
+        border-top: 3px solid #44d;
+      }
+    }
+
+    h2:after,
+    h2:before {
+      content: '"';
+      position: absolute;
+      font-size: 10rem;
+      opacity: 0.1;
+    }
+
+    h2:after {
+      top: 16%;
+      left: -3%;
+    }
+
+    h2:before {
+      top: 47%;
+      left: 19%;
+    }
+
+    .big {
+      font-family: "Source Serif Pro";
+      font-size: 3rem;
+      width: 60%;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 40%;
+      margin-bottom: 1rem;
+    }
+    .signature {
+      font-weight: bold;
+    }
+    img {
+      width: 600px;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      right: -13%;
+      z-index: -1;
+    }
+  }
+  .navbar {
+    display: flex;
+    height: 80px;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        padding-right: 2rem;
+        a {
+          font-weight: 600;
+        }
+        a:hover {
+          color: #44d;
+        }
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    margin-top: 5rem;
+    height: 30vh;
+    justify-content: space-between;
+
+    .box {
+      width: 30%;
+      text-align: left;
+      h1 {
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.showcase {
+  height: 80vh;
+  position: relative;
+  background: url("../img/jeremy-bishop-KrHNUF7rd3U-unsplash.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 100px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+  }
+}

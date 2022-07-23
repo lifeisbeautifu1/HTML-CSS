@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #fff;
+  background: #333;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  //   CSS smooth scroll
+  //   overflow-y: scroll;
+  //   scroll-behavior: smooth;
+  //   scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    li {
+      padding: 1rem 1rem;
+      margin: 0 1rem;
+
+      a {
+        text-transform: uppercase;
+        color: #f4f4f4;
+      }
+
+      a:hover {
+        color: skyblue;
+      }
+    }
+  }
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  //   Scroll snap
+  scroll-snap-align: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+section#home {
+  background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#about {
+  background: url("https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#services {
+  background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section#contacts {
+  background: url("https://source.unsplash.com/2aAHlfDOhJM/1600x900");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

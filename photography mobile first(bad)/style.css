@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  height: auto;
+  margin: 0;
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 2rem 0 2.5rem rgba(0, 0, 0, 0.15),
+    -2rem 0 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.landing {
+  background-color: #fff;
+}
+
+.landing-text {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.landing-text h2 {
+  color: #888;
+}
+
+.landing-image {
+  flex: 1;
+  background: url(https://source.unsplash.com/De8wMYoSSBc);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 1rem 0;
+  border-radius: 50px;
+  color: #333;
+  transition: background-color 0.5s ease-in;
+}
+
+.btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header {
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  background: #333;
+}
+.header h2 {
+  border-left: 1px dotted #fff;
+  border-right: 1px dotted #fff;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.caption {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #333;
+  background: #f4f4f4;
+}
+
+.footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+  .landing {
+    display: flex;
+    height: 100%;
+  }
+
+  .landing-text,
+  .landing-image {
+    height: 100vh;
+  }
+}

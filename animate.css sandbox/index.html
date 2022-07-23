@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Animate.css SandBox</title>
+  </head>
+  <body>
+    <header
+      class="container animate__animated animate__slideInDown text-white text-center bg-primary p-5"
+    >
+      <h1>Animate.css</h1>
+    </header>
+    <section
+      id="unique"
+      class="container animate__animated animate__slideInLeft bg-secondary text-white my-3 p-5"
+    >
+      <h1>Section One</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section
+      class="container animate__animated animate__slideInRight bg-secondary text-white my-3 p-5"
+    >
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section class="container bg-secondary text-white my-3 p-5">
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section class="container bg-secondary text-white my-3 p-5">
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section class="container bg-secondary text-white my-3 p-5">
+      <h1>Section Unique</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section class="container bg-secondary text-white my-3 p-5">
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <section class="container bg-secondary text-white my-3 p-5">
+      <h1>Section Last</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit amet
+        fuga possimus ipsum voluptates et laboriosam, dignissimos dolor
+        doloribus necessitatibus?
+      </p>
+    </section>
+    <script>
+      var waypoint = new Waypoint({
+        element: document.getElementById("unique"),
+        handler: function (direction) {
+          console.log("Scrolled to waypoint!");
+        },
+      });
+    </script>
+  </body>
+</html>

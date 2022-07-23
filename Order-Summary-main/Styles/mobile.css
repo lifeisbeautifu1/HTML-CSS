@@ -1,0 +1,170 @@
+/* Font Family import: */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Variable declaration: */
+:root {
+  /* Primary Colors */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  /* Neutral Colors */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  /* Font Family */
+  --red-hat: 'Red Hat Display', sans-serif;
+  /* Font Size: paragraph */
+  --p: 16px;
+  /* Weights */
+  --m: 500;
+  --b: 700;
+  --sb: 900;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /* display: grid;
+  place-content: center; */
+  background: var(--Pale-blue);
+  font-family: var(--red-hat);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card-container {
+  padding: 2rem;
+  min-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img {
+  width: 100%;
+  height: 220px;
+}
+.wordle {
+  background: url(../images/wordle.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.number {
+  background: url(../images/2048.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Order-summay-card {
+  overflow: scroll;
+  width: 320px;
+  height: 560px;
+  border-radius: 20px;
+  background: #fdfdfd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(153, 165, 212, 0.3) 0px 30px 60px -30px;
+}
+
+.order-summary-card--info {
+  width: 100%;
+  padding: 40px 20px 0 20px;
+  text-align: center;
+}
+
+.order-summary-card--info .order-summary-card--info__title {
+  color: var(--Dark-blue);
+  font-size: 24px;
+  font-weight: var(--sb);
+  margin-bottom: 15px;
+}
+
+.order-summary-card--info .order-summary-card--info__text {
+  width: 270px;
+  font-weight: var(--m);
+  margin: 0px auto;
+  font-size: 16px;
+  color: var(--Desaturated-blue);
+}
+
+.order-summary-card--info-plan {
+  background: var(--Very-pale-blue);
+  border-radius: 15px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  margin: 25px 0;
+}
+
+.order-summary-card--info-plan .icon-music {
+  background-image: url(../images/icon-music.svg);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+.order-summary-card--info-plan .order-summary-card--info-plan__change {
+  color: var(--Bright-blue);
+  font-size: 13px;
+  font-weight: var(--sb);
+  margin-left: 45px;
+}
+
+.order-summary-card--info-plan .plan-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.plan-info .plan-info__name {
+  color: var(--Dark-blue);
+  font-weight: var(--b);
+  font-size: var(--p);
+}
+
+.plan-info .plan-info__price {
+  color: var(--Desaturated-blue);
+  font-size: 14px;
+  font-weight: var(--b);
+}
+
+.order-summary-card--buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-summary-card--buttons .Order-summay-card--info-primary-buttons {
+  background: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--red-hat);
+  font-size: 16px;
+  font-weight: var(--b);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(19, 23, 241, 0.23) 0px 6px 6px;
+}
+
+.order-summary-card--buttons .Order-summay-card--info-primary-buttons:hover {
+  cursor: pointer;
+}
+
+.order-summary-card--buttons .Order-summay-card--info-secundary-buttons {
+  color: var(--Desaturated-blue);
+  font-weight: var(--sb);
+  font-size: 14px;
+}
+
+.order-summary-card--buttons .Order-summay-card--info-secundary-buttons:hover {
+  cursor: pointer;
+}

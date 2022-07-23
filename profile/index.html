@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="icon" href="favicon.ico" type="image/icon type" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="profile-modal">
+      <div class="profile-modal-body">
+        <div class="wrapper">
+          <div class="profile">
+            <div class="profile_img_info">
+              <div class="img">
+                <img src="photo.jpg" alt="profile_pic" />
+              </div>
+              <div class="info">
+                <p class="name">Potato</p>
+              </div>
+            </div>
+            <div class="profile_skills">
+              <div class="skills">
+                <p>Stats</p>
+                <ul>
+                  <li>
+                    <span class="title">Level:</span>
+                    <span class="profile-level tag">10</span>
+                  </li>
+                  <li>
+                    <span class="title">Points:</span>
+                    <span class="profile-points tag">1234</span>
+                  </li>
+                  <li>
+                    <span class="title">Favourite game:</span>
+                    <span class="profile-favourite-game tag">Snake</span>
+                  </li>
+                  <li>
+                    <span class="title">Hours played:</span>
+
+                    <span class="hours-played tag"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile_counts">
+            <div class="profile_counts_wrap">
+              <div class="item">
+                <div class="icon">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="title">
+                  <span class="profile-games-played">10</span> Games Played
+                </div>
+              </div>
+            </div>
+            <div class="profile_counts_wrap">
+              <div class="item">
+                <div class="icon"><i class="fas fa-trophy"></i></div>
+                <div class="title">
+                  <span class="profile-wins"> 9 </span> Wins
+                </div>
+              </div>
+            </div>
+            <div class="profile_counts_wrap">
+              <div class="item">
+                <div class="icon"><i class="fas fa-comment"></i></div>
+                <div class="title">
+                  <span class="profile-messages-send">66</span> Messages Send
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="close.svg" class="close-profile" alt="" />
+    </div>
+
+    <script>
+      const profileModal = document.querySelector('.profile-modal');
+      document.querySelector('.close-profile').addEventListener('click', () => {
+        profileModal.style.display = 'none';
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target == profileModal) profileModal.style.display = 'none';
+      });
+
+      const num = 550 / 3600;
+      document.querySelector('.hours-played').textContent =
+        parseFloat(num).toFixed(1);
+    </script>
+  </body>
+</html>
